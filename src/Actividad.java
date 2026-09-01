@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-public class Actividad {
+public abstract class Actividad {
     private int id;
     private String titulo;
     private int cupoMaximo;
@@ -67,5 +67,11 @@ public class Actividad {
                             + inscripcion.getFecha()
             );
         }
+    }
+    public abstract double calcularCostoMateriales();
+    public abstract String getTipo();
+
+    public final void mostrarIdentificacion() {
+        System.out.println("- " + getTipo() + ": " + titulo + " (id=" + id + ")" + " - Cupo máximo: " + cupoMaximo);
     }
 }

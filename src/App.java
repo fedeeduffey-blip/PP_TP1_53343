@@ -12,8 +12,8 @@ public class App {
     EventoUniversitario copiaEvento1 = new EventoUniversitario(evento1);
 
     evento1.asignarSala(sala1);
-    evento1.crearActividad(101, "Taller de Java OO", 30);
-    evento1.crearActividad(102, "Conferencia de Algoritmos", 50);
+    evento1.crearActividad(101, "Taller de Java OO", 30,"taller");
+    evento1.crearActividad(102, "Conferencia de Algoritmos", 50,"charla");
     System.out.println("EVENTO ORIGINAL");
     evento1.mostrarDatos();
 
